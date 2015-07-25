@@ -8,29 +8,19 @@ body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-.header-image {
+.company-header {
     display: block;
     width: 100%;
-    text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    text-align: left;
 }
-
-.headline {
-    padding: 120px 0;
+.company-header img {
+    float:right;
+    max-width: 300px;
 }
 
 .headline h1 {
-    font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
-
-.headline h2 {
-    font-size: 77px;
+    font-size: 80px;
+    float:left;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
@@ -54,7 +44,54 @@ body {
 .featurette-heading {
     font-size: 50px;
 }
-
+/* GAUGE */
+    .activity-gauge {
+      border-radius: 220px 220px 0 0;
+      display: inline-block;
+      height: 110px;
+      overflow: hidden;
+      position: relative;
+      width: 210px;
+    }
+    .levels {
+    background: #e6b822;
+    border-bottom: 2px solid #464646;
+    height: 104px;
+    position: relative;
+    }
+    .slice {
+      border-left: 66px solid transparent;
+      border-right: 66px solid transparent;
+      display: block;
+      height: 0;
+      margin-left: -66px;
+      position: absolute;
+        bottom: 0;
+        left: 50%;
+      width: 0;
+      -webkit-transform-origin: $origin;
+         -moz-transform-origin: $origin;
+          -ms-transform-origin: $origin;
+              transform-origin: $origin;
+    }
+    .diverse {
+        background-color:yellow;
+    }
+    .homogenous {
+        background-color:grey;
+    }
+    .gauge-needle {
+      background: url('http://f.cl.ly/items/2d3Q26031W0O0R2o1j3V/gauge-needle.svg') 0 0 no-repeat;
+      width: 17px;
+      height: 94px;
+      display: block;
+      margin-left: -8px;
+      margin-bottom: -3px;
+      position: absolute;
+        left: 50%;
+        bottom: 2px;
+    }
+/* END GAUGE */
 footer {
     margin: 50px 0;
 }
